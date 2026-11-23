@@ -34,10 +34,8 @@ tinderUser.loggedIn = false
 console.log(tinderUser);
 */
 const regular = {
-    name: {
         fullname: 'mohd',
         lastname: 'faiz',
-    }
 }
 //console.log(regular.name.fullname)
 
@@ -49,4 +47,7 @@ const obj3 = { ...obj1, ...obj2 }
 
 //console.log(Object.keys(regular))
 //console.log(Object.values(regular));
-console.log(regular.hasOwnProperty("name"))
+//console.log(regular.hasOwnProperty("name"))
+
+const {fullname:fn} = regular//destucture
+console.log(fn)
